@@ -1,0 +1,34 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+
+# OpenClaw local configuration (do not commit)
+openclaw.json
+token.txt
+
+# Node modules (if any)
+node_modules/
+
+# Scripts may generate temporary files
+*.tmp
+*.temp
