@@ -47,6 +47,26 @@ Para clientes que quieren un asistente de IA privado, sin riesgos de seguridad.
 
 ---
 
+## 🗑️ Desinstalación (si necesitas eliminar OpenClaw)
+
+### **Windows 10/11**
+```powershell
+curl -o uninstall-windows.ps1 https://raw.githubusercontent.com/skillnest/openclaw-secure/main/scripts/uninstall-windows.ps1
+.\uninstall-windows.ps1
+```
+
+### **Ubuntu/Linux**
+```bash
+curl -fsSL https://raw.githubusercontent.com/skillnest/openclaw-secure/main/scripts/uninstall-ubuntu.sh | bash
+```
+
+### **macOS**
+```bash
+curl -fsSL https://raw.githubusercontent.com/skillnest/openclaw-secure/main/scripts/uninstall-mac.sh | bash
+```
+
+---
+
 ## 🔒 ¿Por qué es seguro?
 
 | Característica | Explicación simple |
