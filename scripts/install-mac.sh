@@ -135,7 +135,26 @@ elif [[ $REPLY == "2" ]]; then
 fi
 
 # ====================
-# 7. COPIAR PLANTILLA SEGURA
+# 7. HERRAMIENTAS WEB (ACCESO A INTERNET)
+# ====================
+echo ""
+print_msg "Herramientas web (acceso a internet):"
+echo "El asistente puede usar web_search (buscar en internet) y web_fetch (obtener contenido de URLs)."
+echo "Riesgos: el agente podrá acceder a contenido público de internet."
+echo "Beneficios: puede buscar información actualizada (noticias, precios, clima, documentación)."
+echo ""
+read -p "¿Quieres habilitar herramientas web (búsqueda y fetch)? (s/n): " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Ss]$ ]]; then
+    ALLOW_WEB_TOOLS='"allow": ["web_search", "web_fetch"],'
+    print_success "Herramientas web habilitadas."
+else
+    ALLOW_WEB_TOOLS=""
+    print_msg "Herramientas web deshabilitadas (solo herramientas locales)."
+fi
+
+# ====================
+# 8. COPIAR PLANTILLA SEGURA
 # ====================
 print_msg "Creando configuración segura..."
 USER_HOME="$HOME"
@@ -145,6 +164,7 @@ if [[ -f "$CONFIG_TEMPLATE" ]]; then
     sed "s/{{RANDOM_TOKEN}}/$GATEWAY_TOKEN/g" "$CONFIG_TEMPLATE" \
         | sed "s/{{DEEPSEEK_API_KEY}}/$DEEPSEEK_API_KEY/g" \
         | sed "s|{{USER_HOME}}|$USER_HOME|g" \
+        | sed 's/{{ALLOW_WEB_TOOLS}}/'"$ALLOW_WEB_TOOLS"'/g' \
         > ~/.openclaw/openclaw.json
     print_success "Configuración guardada en ~/.openclaw/openclaw.json"
 else
@@ -176,14 +196,14 @@ EOF
 fi
 
 # ====================
-# 8. AJUSTAR PERMISOS
+# 9. AJUSTAR PERMISOS
 # ====================
 chmod 700 ~/.openclaw
 chmod 600 ~/.openclaw/openclaw.json
 print_success "Permisos ajustados."
 
 # ====================
-# 9. INSTALAR DOCKER (OPCIONAL)
+# 10. INSTALAR DOCKER (OPCIONAL)
 # ====================
 echo ""
 read -p "¿Instalar Docker para sandbox de agentes? (recomendado) (s/n): " -n 1 -r
@@ -204,7 +224,7 @@ else
 fi
 
 # ====================
-# 10. CONFIGURAR FIREWALL (OPCIONAL)
+# 11. CONFIGURAR FIREWALL (OPCIONAL)
 # ====================
 echo ""
 read -p "¿Configurar firewall (pf) para bloquear conexiones no deseadas? (recomendado) (s/n): " -n 1 -r
@@ -223,7 +243,7 @@ else
 fi
 
 # ====================
-# 11. EJECUTAR AUDITORÍA DE SEGURIDAD
+# 12. EJECUTAR AUDITORÍA DE SEGURIDAD
 # ====================
 print_msg "Ejecutando auditoría de seguridad OpenClaw..."
 openclaw security audit --fix

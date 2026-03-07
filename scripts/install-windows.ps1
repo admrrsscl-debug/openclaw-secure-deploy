@@ -158,28 +158,21 @@ if ($modelChoice -eq "1") {
 }
 
 # ====================
-# 6. COPIAR PLANTILLA SEGURA
+# 6. PREGUNTAR SOBRE HERRAMIENTAS WEB
 # ====================
-Write-Info "Creando configuracion segura..."
-$configTemplate = Join-Path $PSScriptRoot "..\configs\openclaw.json.hardened"
-$configPath = "$openclawDir\openclaw.json"
-
-if (Test-Path $configTemplate) {
-    try {
-        $configContent = Get-Content $configTemplate -Raw
-        $configContent = $configContent -replace '\{\{RANDOM_TOKEN\}\}', $gatewayToken
-        $configContent = $configContent -replace '\{\{DEEPSEEK_API_KEY\}\}', $deepseekApiKey
-        $configContent = $configContent -replace '\{\{USER_HOME\}\}', $env:USERPROFILE
-        $configContent | Out-File -FilePath $configPath -Encoding UTF8
-        Write-Success "Configuracion guardada en $configPath"
-    } catch {
-        Write-Error "Error creando configuracion: $_"
-        # Crear configuracion basica
-        Create-BasicConfig
-    }
+Write-Host ""
+Write-Info "Herramientas web (acceso a internet):"
+Write-Host "El asistente puede usar web_search (buscar en internet) y web_fetch (obtener contenido de URLs)." -ForegroundColor Gray
+Write-Host "Riesgos: el agente podra acceder a contenido publico de internet." -ForegroundColor Gray
+Write-Host "Beneficios: puede buscar informacion actualizada (noticias, precios, clima, documentacion)." -ForegroundColor Gray
+Write-Host ""
+$webChoice = Read-Host "Quieres habilitar herramientas web (busqueda y fetch)? (s/n)"
+if ($webChoice -match "^(s|S)$") {
+    $allowWebTools = "`"allow`": [`"web_search`", `"web_fetch`"],"
+    Write-Success "Herramientas web habilitadas."
 } else {
-    Write-Warning "No se encontro la plantilla de configuracion. Creando configuracion basica..."
-    Create-BasicConfig
+    $allowWebTools = ""
+    Write-Info "Herramientas web deshabilitadas (solo herramientas locales)."
 }
 
 function Create-BasicConfig {
@@ -198,6 +191,7 @@ function Create-BasicConfig {
   "tools": {
     "profile": "messaging",
     "deny": ["group:automation", "group:runtime", "group:fs"],
+    $allowWebTools
     "fs": { "workspaceOnly": true },
     "exec": { "security": "deny", "ask": "always" }
   },
@@ -210,7 +204,35 @@ function Create-BasicConfig {
 }
 
 # ====================
-# 7. AJUSTAR PERMISOS
+# 8. COPIAR PLANTILLA SEGURA
+# ====================
+Write-Info "Creando configuracion segura..."
+$configTemplate = Join-Path $PSScriptRoot "..\configs\openclaw.json.hardened"
+$configPath = "$openclawDir\openclaw.json"
+
+if (Test-Path $configTemplate) {
+    try {
+        $configContent = Get-Content $configTemplate -Raw
+        $configContent = $configContent -replace '\{\{RANDOM_TOKEN\}\}', $gatewayToken
+        $configContent = $configContent -replace '\{\{DEEPSEEK_API_KEY\}\}', $deepseekApiKey
+        $configContent = $configContent -replace '\{\{USER_HOME\}\}', $env:USERPROFILE
+        $configContent = $configContent -replace '\{\{ALLOW_WEB_TOOLS\}\}', $allowWebTools
+        $configContent | Out-File -FilePath $configPath -Encoding UTF8
+        Write-Success "Configuracion guardada en $configPath"
+    } catch {
+        Write-Error "Error creando configuracion: $_"
+        # Crear configuracion basica
+        Create-BasicConfig
+    }
+} else {
+    Write-Warning "No se encontro la plantilla de configuracion. Creando configuracion basica..."
+    Create-BasicConfig
+}
+
+
+
+# ====================
+# 9. AJUSTAR PERMISOS
 # ====================
 # En Windows, limitar acceso al directorio
 try {
@@ -224,7 +246,7 @@ try {
 }
 
 # ====================
-# 8. INSTALAR DOCKER DESKTOP (OPCIONAL)
+# 10. INSTALAR DOCKER DESKTOP (OPCIONAL)
 # ====================
 Write-Host ""
 $dockerChoice = Read-Host "Instalar Docker Desktop para sandbox de agentes? (recomendado) (s/n)"
@@ -251,7 +273,7 @@ if ($dockerChoice -match "^(s|S)$") {
 }
 
 # ====================
-# 9. CONFIGURAR FIREWALL (OPCIONAL)
+# 11. CONFIGURAR FIREWALL (OPCIONAL)
 # ====================
 Write-Host ""
 $firewallChoice = Read-Host "Configurar reglas de firewall para bloquear conexiones no deseadas? (recomendado) (s/n)"
@@ -269,7 +291,7 @@ if ($firewallChoice -match "^(s|S)$") {
 }
 
 # ====================
-# 10. EJECUTAR AUDITORIA DE SEGURIDAD
+# 12. EJECUTAR AUDITORIA DE SEGURIDAD
 # ====================
 Write-Info "Ejecutando auditoria de seguridad OpenClaw..."
 try {
@@ -280,7 +302,7 @@ try {
 }
 
 # ====================
-# 11. CONFIGURAR TAILSCALE (OPCIONAL)
+# 13. CONFIGURAR TAILSCALE (OPCIONAL)
 # ====================
 Write-Host ""
 $tailscaleChoice = Read-Host "Instalar Tailscale para soporte remoto seguro? (recomendado) (s/n)"

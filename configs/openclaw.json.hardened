@@ -59,6 +59,7 @@
       "sessions_spawn",
       "sessions_send"
     ],
+    {{ALLOW_WEB_TOOLS}}
     "fs": { "workspaceOnly": true },
     "exec": { "security": "deny", "ask": "always" },
     "elevated": { "enabled": false }
