@@ -361,7 +361,7 @@ Write-Host "- El Gateway solo escucha localmente (127.0.0.1)." -ForegroundColor 
 Write-Host "- Cada nuevo contacto requiere aprobacion (pairing)." -ForegroundColor Gray
 Write-Host "- Revisa los logs en %TEMP%\openclaw\openclaw-*.log" -ForegroundColor Gray
 Write-Host ""
-Write-Host "Gracias por usar OpenClaw Seguro de SkillNest." -ForegroundColor Cyan
+Write-Host "Gracias por usar OpenClaw Seguro de Skillnest." -ForegroundColor Cyan
 Write-Host "==================================================" -ForegroundColor Magenta
 
 # Pausar para que el usuario pueda leer
