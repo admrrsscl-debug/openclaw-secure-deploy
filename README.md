@@ -1,4 +1,4 @@
-# 🦞 OpenClaw Seguro para SkillNest
+# 🦞 OpenClaw Seguro para Skillnest
 
 **Instalación segura de OpenClaw en tu propia computadora**  
 Para clientes que quieren un asistente de IA privado, sin riesgos de seguridad.
@@ -134,11 +134,11 @@ El contacto no podrá escribir hasta que apruebes el código de pairing. Los có
 ## ⚖️ Licencia
 
 Este repositorio es de código abierto bajo licencia MIT.  
-OpenClaw es un proyecto comunitario; SkillNest ofrece empaquetado seguro y soporte profesional.
+OpenClaw es un proyecto comunitario; Skillnest ofrece empaquetado seguro y soporte profesional.
 
 **¿Listo para empezar?** → Elige tu sistema operativo arriba. 🚀
 
 ---
 
 *Última actualización: marzo 2026*  
-*Mantenido por SkillNest y la comunidad OpenClaw.*
+*Mantenido por Skillnest y la comunidad OpenClaw.*
