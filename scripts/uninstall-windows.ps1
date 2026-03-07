@@ -201,7 +201,7 @@ Write-Host ""
 Write-Host "Para reinstalar:" -ForegroundColor White
 Write-Host "curl -fsSL https://raw.githubusercontent.com/skillnest/openclaw-secure/main/scripts/install-windows.ps1 | powershell -" -ForegroundColor Gray
 Write-Host ""
-Write-Host "Gracias por usar OpenClaw Seguro de SkillNest." -ForegroundColor Cyan
+Write-Host "Gracias por usar OpenClaw Seguro de Skillnest." -ForegroundColor Cyan
 Write-Host "==================================================" -ForegroundColor Magenta
 
 # Pausar para que el usuario pueda leer
