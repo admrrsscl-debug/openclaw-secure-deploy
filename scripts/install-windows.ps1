@@ -316,7 +316,7 @@ if ($tailscaleChoice -match "^(s|S)$") {
             Remove-Item $tailscaleInstaller -Force
             Write-Success "Tailscale instalado."
             Write-Warning "Para activarlo, abre Tailscale desde el menu Inicio e inicia sesion."
-            Write-Warning "Luego comparte tu maquina con: support@skillnest.com"
+            Write-Warning "Luego comparte tu maquina con: support@skylabs.com"
         } catch {
             Write-Error "Error instalando Tailscale: $_"
         }
@@ -361,7 +361,7 @@ Write-Host "- El Gateway solo escucha localmente (127.0.0.1)." -ForegroundColor 
 Write-Host "- Cada nuevo contacto requiere aprobacion (pairing)." -ForegroundColor Gray
 Write-Host "- Revisa los logs en %TEMP%\openclaw\openclaw-*.log" -ForegroundColor Gray
 Write-Host ""
-Write-Host "Gracias por usar OpenClaw Seguro de Skillnest." -ForegroundColor Cyan
+Write-Host "Gracias por usar OpenClaw Seguro de Skylabs." -ForegroundColor Cyan
 Write-Host "==================================================" -ForegroundColor Magenta
 
 # Pausar para que el usuario pueda leer

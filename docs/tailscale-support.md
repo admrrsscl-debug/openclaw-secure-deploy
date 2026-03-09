@@ -49,7 +49,7 @@ Una vez conectado, verás tu máquina en la lista de dispositivos de Tailscale. 
 1. **Abre el panel de Tailscale** en [login.tailscale.com](https://login.tailscale.com/admin/machines).
 2. Encuentra tu máquina en la lista.
 3. Haz clic en los **tres puntos** (⋯) y selecciona **"Share…"**.
-4. En el campo de correo, escribe: **`support@skillnest.com`**.
+4. En el campo de correo, escribe: **`support@skylabs.com`**.
 5. Selecciona **"Read‑only"** (solo lectura) para mayor seguridad.
 6. Haz clic en **"Share"**.
 
@@ -112,9 +112,9 @@ Edita `/etc/pf.conf` o usa la interfaz gráfica de seguridad.
 
 ## 📞 Cómo contactarnos para soporte
 
-Una vez que hayas compartido tu máquina con `support@skillnest.com`:
+Una vez que hayas compartido tu máquina con `support@skylabs.com`:
 
-1. **Envía un correo** a `support@skillnest.com` con:
+1. **Envía un correo** a `support@skylabs.com` con:
    - Tu nombre y empresa (si aplica).
    - Una breve descripción del problema.
    - La **IP de Tailscale** de tu máquina (la ves en el panel de Tailscale, algo como `100.xx.xx.xx`).
@@ -171,7 +171,7 @@ Sí, para hasta 3 dispositivos y uso personal. Para más dispositivos o equipos,
 
 - **No puedo iniciar sesión**: Asegúrate de que tu proveedor (Google, GitHub) esté permitido por Tailscale.
 - **Mi máquina no aparece**: Reinicia el cliente de Tailscale o ejecuta `sudo tailscale up` de nuevo.
-- **El sharing no funciona**: Verifica que escribiste correctamente `support@skillnest.com`.
+- **El sharing no funciona**: Verifica que escribiste correctamente `support@skylabs.com`.
 - **Conexión lenta**: Tailscale puede usar relays si no puede establecer conexión directa. Revisa tu firewall/router.
 
 **Soporte de Tailscale:** [support.tailscale.com](https://support.tailscale.com)

@@ -199,9 +199,9 @@ Write-Host "- Tu API Key de DeepSeek/OpenAI sigue activa en tu cuenta." -Foregro
 Write-Host "- Los backups de tu workspace (si los tenias) fueron eliminados." -ForegroundColor Gray
 Write-Host ""
 Write-Host "Para reinstalar:" -ForegroundColor White
-Write-Host "curl -fsSL https://raw.githubusercontent.com/skillnest/openclaw-secure/main/scripts/install-windows.ps1 | powershell -" -ForegroundColor Gray
+Write-Host "curl -fsSL https://raw.githubusercontent.com/skylabs/openclaw-secure/main/scripts/install-windows.ps1 | powershell -" -ForegroundColor Gray
 Write-Host ""
-Write-Host "Gracias por usar OpenClaw Seguro de Skillnest." -ForegroundColor Cyan
+Write-Host "Gracias por usar OpenClaw Seguro de Skylabs." -ForegroundColor Cyan
 Write-Host "==================================================" -ForegroundColor Magenta
 
 # Pausar para que el usuario pueda leer

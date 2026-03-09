@@ -1,6 +1,8 @@
 {
   "$schema": "https://docs.openclaw.ai/schemas/openclaw.json",
   "meta": {
+    "description": "Configuración segura para cliente – generada por SkillNest",
+    "version": "1.0.0"
   },
 
   // 🔐 GATEWAY: solo escucha localmente, con autenticación

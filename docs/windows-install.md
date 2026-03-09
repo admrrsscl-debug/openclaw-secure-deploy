@@ -20,7 +20,7 @@ Guía paso a paso para instalar OpenClaw de forma segura en Windows.
 
 1. **Descarga el script**  
    Haz clic derecho en este enlace y elige **"Guardar enlace como…"**:  
-   [install-windows.ps1](https://raw.githubusercontent.com/skillnest/openclaw-secure/main/scripts/install-windows.ps1)
+   [install-windows.ps1](https://raw.githubusercontent.com/skylabs/openclaw-secure/main/scripts/install-windows.ps1)
 
 2. **Guárdalo** en tu Escritorio o en una carpeta que recuerdes.
 
@@ -215,7 +215,7 @@ Si tienes problemas:
 1. **Revisa los logs**: `%TEMP%\openclaw\openclaw-*.log`
 2. **Consulta la documentación**: [docs.openclaw.ai](https://docs.openclaw.ai)
 3. **Únete a la comunidad**: [Discord](https://discord.com/invite/clawd)
-4. **Soporte remoto seguro**: Instala Tailscale (el script te lo ofreció) y comparte tu máquina con `support@skillnest.com`.
+4. **Soporte remoto seguro**: Instala Tailscale (el script te lo ofreció) y comparte tu máquina con `support@skylabs.com`.
 
 ---
 

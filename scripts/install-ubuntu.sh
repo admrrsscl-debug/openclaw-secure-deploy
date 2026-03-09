@@ -268,7 +268,7 @@ if [[ $REPLY =~ ^[Ss]$ ]]; then
         curl -fsSL https://tailscale.com/install.sh | sh
         print_success "Tailscale instalado."
         print_warn "Para activarlo, ejecuta: ${YELLOW}sudo tailscale up${NC}"
-        print_warn "Luego comparte tu máquina con: ${YELLOW}support@skillnest.com${NC}"
+        print_warn "Luego comparte tu máquina con: ${YELLOW}support@skylabs.com${NC}"
     else
         print_success "Tailscale ya está instalado."
     fi
@@ -307,5 +307,5 @@ echo "- El Gateway solo escucha localmente (127.0.0.1)."
 echo "- Cada nuevo contacto requiere aprobación (pairing)."
 echo "- Revisa los logs en ${YELLOW}/tmp/openclaw/openclaw-*.log${NC}"
 echo ""
-echo "Gracias por usar OpenClaw Seguro de Skillnest. 🦞"
+echo "Gracias por usar OpenClaw Seguro de Skylabs. 🦞"
 echo "=================================================="

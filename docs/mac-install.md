@@ -21,7 +21,7 @@ Guía paso a paso para instalar OpenClaw de forma segura en macOS (Apple Silicon
 Abre **Terminal** (búscala en Aplicaciones → Utilidades) y ejecuta:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/skillnest/openclaw-secure/main/scripts/install-mac.sh | bash
+curl -fsSL https://raw.githubusercontent.com/skylabs/openclaw-secure/main/scripts/install-mac.sh | bash
 ```
 
 El script te pedirá confirmación y luego hará todo automáticamente.
@@ -29,7 +29,7 @@ El script te pedirá confirmación y luego hará todo automáticamente.
 **Nota:** Si prefieres revisar el script antes de ejecutarlo, puedes descargarlo primero:
 
 ```bash
-curl -O https://raw.githubusercontent.com/skillnest/openclaw-secure/main/scripts/install-mac.sh
+curl -O https://raw.githubusercontent.com/skylabs/openclaw-secure/main/scripts/install-mac.sh
 chmod +x install-mac.sh
 ./install-mac.sh
 ```
@@ -284,7 +284,7 @@ Si tienes problemas:
 1. **Revisa los logs**: `tail -f /tmp/openclaw/openclaw-*.log`
 2. **Consulta la documentación**: [docs.openclaw.ai](https://docs.openclaw.ai)
 3. **Únete a la comunidad**: [Discord](https://discord.com/invite/clawd)
-4. **Soporte remoto seguro**: Instala Tailscale (el script te lo ofreció) y comparte tu máquina con `support@skillnest.com`.
+4. **Soporte remoto seguro**: Instala Tailscale (el script te lo ofreció) y comparte tu máquina con `support@skylabs.com`.
 
 ---
 

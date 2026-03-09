@@ -1,4 +1,4 @@
-# 🦞 OpenClaw Seguro para Skillnest
+# 🦞 OpenClaw Seguro para Skylabs
 
 **Instalación segura de OpenClaw en tu propia computadora**  
 Para clientes que quieren un asistente de IA privado, sin riesgos de seguridad.
@@ -35,13 +35,13 @@ Para clientes que quieren un asistente de IA privado, sin riesgos de seguridad.
 
 ### 2. **Ubuntu/Linux** (terminal)
    ```bash
-   curl -fsSL https://raw.githubusercontent.com/skillnest/openclaw-secure/main/scripts/install-ubuntu.sh | bash
+   curl -fsSL https://raw.githubusercontent.com/skylabs/openclaw-secure/main/scripts/install-ubuntu.sh | bash
    ```
    [Ver guía completa](docs/ubuntu-install.md)
 
 ### 3. **macOS** (terminal)
    ```bash
-   curl -fsSL https://raw.githubusercontent.com/skillnest/openclaw-secure/main/scripts/install-mac.sh | bash
+   curl -fsSL https://raw.githubusercontent.com/skylabs/openclaw-secure/main/scripts/install-mac.sh | bash
    ```
    [Ver guía completa](docs/mac-install.md)
 
@@ -51,18 +51,18 @@ Para clientes que quieren un asistente de IA privado, sin riesgos de seguridad.
 
 ### **Windows 10/11**
 ```powershell
-curl -o uninstall-windows.ps1 https://raw.githubusercontent.com/skillnest/openclaw-secure/main/scripts/uninstall-windows.ps1
+curl -o uninstall-windows.ps1 https://raw.githubusercontent.com/skylabs/openclaw-secure/main/scripts/uninstall-windows.ps1
 .\uninstall-windows.ps1
 ```
 
 ### **Ubuntu/Linux**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/skillnest/openclaw-secure/main/scripts/uninstall-ubuntu.sh | bash
+curl -fsSL https://raw.githubusercontent.com/skylabs/openclaw-secure/main/scripts/uninstall-ubuntu.sh | bash
 ```
 
 ### **macOS**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/skillnest/openclaw-secure/main/scripts/uninstall-mac.sh | bash
+curl -fsSL https://raw.githubusercontent.com/skylabs/openclaw-secure/main/scripts/uninstall-mac.sh | bash
 ```
 
 ---
@@ -88,7 +88,7 @@ Si necesitas ayuda de nuestro equipo, usamos **Tailscale**: una VPN simple que c
 ### Pasos para soporte:
 1. **Instala Tailscale** (el instalador lo hace por ti, o puedes [descargarlo manualmente](https://tailscale.com/download)).
 2. **Inicia sesión** con tu cuenta de Google, GitHub, etc.
-3. **Comparte tu máquina** con `support@skillnest.com` (solo lectura).
+3. **Comparte tu máquina** con `support@skylabs.com` (solo lectura).
 4. **Nos conectamos** sin que tengas que abrir puertos.
 
 [Guía completa de soporte con Tailscale](docs/tailscale-support.md)
@@ -145,7 +145,7 @@ El contacto no podrá escribir hasta que apruebes el código de pairing. Los có
 
 ## 📞 Contacto y soporte
 
-- **Soporte técnico**: support@skillnest.com  
+- **Soporte técnico**: support@skylabs.com  
 - **Documentación oficial**: [docs.openclaw.ai](https://docs.openclaw.ai)  
 - **Comunidad Discord**: [invite.clawd](https://discord.com/invite/clawd)  
 
@@ -154,11 +154,11 @@ El contacto no podrá escribir hasta que apruebes el código de pairing. Los có
 ## ⚖️ Licencia
 
 Este repositorio es de código abierto bajo licencia MIT.  
-OpenClaw es un proyecto comunitario; Skillnest ofrece empaquetado seguro y soporte profesional.
+OpenClaw es un proyecto comunitario; Skylabs ofrece empaquetado seguro y soporte profesional.
 
 **¿Listo para empezar?** → Elige tu sistema operativo arriba. 🚀
 
 ---
 
 *Última actualización: marzo 2026*  
-*Mantenido por Skillnest y la comunidad OpenClaw.*
+*Mantenido por Skylabs y la comunidad OpenClaw.*
