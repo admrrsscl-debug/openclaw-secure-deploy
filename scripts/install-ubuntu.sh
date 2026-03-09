@@ -309,3 +309,6 @@ echo "- Revisa los logs en ${YELLOW}/tmp/openclaw/openclaw-*.log${NC}"
 echo ""
 echo "Gracias por usar OpenClaw Seguro de Skylabs. 🦞"
 echo "=================================================="
+
+# 🌟 Solicitar estrella al repositorio
+bash scripts/star-repo.sh
