@@ -1,4 +1,4 @@
-# 🦞 OpenClaw Seguro para Skylabs
+# 🦞 OpenClaw Local Secure - Despliegue seguro de agentes en entorno local
 
 **Instalación segura de OpenClaw en tu propia computadora**  
 Para clientes que quieren un asistente de IA privado, sin riesgos de seguridad.
