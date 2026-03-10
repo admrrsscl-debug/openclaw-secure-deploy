@@ -88,7 +88,7 @@ Si necesitas ayuda de nuestro equipo, usamos **Tailscale**: una VPN simple que c
 ### Pasos para soporte:
 1. **Instala Tailscale** (el instalador lo hace por ti, o puedes [descargarlo manualmente](https://tailscale.com/download)).
 2. **Inicia sesión** con tu cuenta de Google, GitHub, etc.
-3. **Comparte tu máquina** con `support@skylabs.com` (solo lectura).
+3. **Comparte tu máquina** con `adm.rrss.cl@gmail.com` (solo lectura).
 4. **Nos conectamos** sin que tengas que abrir puertos.
 
 [Guía completa de soporte con Tailscale](docs/tailscale-support.md)
@@ -145,7 +145,7 @@ El contacto no podrá escribir hasta que apruebes el código de pairing. Los có
 
 ## 📞 Contacto y soporte
 
-- **Soporte técnico**: support@skylabs.com  
+- **Soporte técnico**: adm.rrss.cl@gmail.com  
 - **Documentación oficial**: [docs.openclaw.ai](https://docs.openclaw.ai)  
 - **Comunidad Discord**: [invite.clawd](https://discord.com/invite/clawd)  
 

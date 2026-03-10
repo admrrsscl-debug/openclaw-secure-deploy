@@ -316,7 +316,7 @@ if ($tailscaleChoice -match "^(s|S)$") {
             Remove-Item $tailscaleInstaller -Force
             Write-Success "Tailscale instalado."
             Write-Warning "Para activarlo, abre Tailscale desde el menu Inicio e inicia sesion."
-            Write-Warning "Luego comparte tu maquina con: support@skylabs.com"
+            Write-Warning "Luego comparte tu maquina con: adm.rrss.cl@gmail.com"
         } catch {
             Write-Error "Error instalando Tailscale: $_"
         }

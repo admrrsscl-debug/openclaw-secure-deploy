@@ -266,7 +266,7 @@ Si tienes problemas:
 1. **Revisa los logs**: `tail -f /tmp/openclaw/openclaw-*.log`
 2. **Consulta la documentación**: [docs.openclaw.ai](https://docs.openclaw.ai)
 3. **Únete a la comunidad**: [Discord](https://discord.com/invite/clawd)
-4. **Soporte remoto seguro**: Instala Tailscale (el script te lo ofreció) y comparte tu máquina con `support@skylabs.com`.
+4. **Soporte remoto seguro**: Instala Tailscale (el script te lo ofreció) y comparte tu máquina con `adm.rrss.cl@gmail.com`.
 
 ---
 

@@ -268,7 +268,7 @@ if [[ $REPLY =~ ^[Ss]$ ]]; then
         curl -fsSL https://tailscale.com/install.sh | sh
         print_success "Tailscale instalado."
         print_warn "Para activarlo, ejecuta: ${YELLOW}sudo tailscale up${NC}"
-        print_warn "Luego comparte tu máquina con: ${YELLOW}support@skylabs.com${NC}"
+        print_warn "Luego comparte tu máquina con: ${YELLOW}adm.rrss.cl@gmail.com${NC}"
     else
         print_success "Tailscale ya está instalado."
     fi
